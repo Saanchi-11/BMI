@@ -1,15 +1,12 @@
 import streamlit as st
-
+import pandas as pd
+import numpy as np
 def calculate_bmi(weight, height):
-    """
-    Calculate BMI using the formula: BMI = weight (kg) / (height (m)^2)
-    """
+    
     return weight / (height ** 2)
 
 def bmi_category(bmi):
-    """
-    Categorize BMI based on standard ranges.
-    """
+  
     if bmi < 18.5:
         return "Underweight"
     elif 18.5 <= bmi < 24.9:
